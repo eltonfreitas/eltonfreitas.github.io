@@ -1,0 +1,6 @@
+.DS_Store
+.claude/
+
+# Exclude high-res originals — only profile.jpg is used by the site
+img/EltonFreitas*
+img/Photo 1.jpg

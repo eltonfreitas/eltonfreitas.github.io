@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elton Freitas | Economist</title>
+  <meta name="description" content="Personal website of Elton Freitas, Professor at Universidade Federal de Sergipe, researching economic complexity and regional economics.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<!-- ========== NAVIGATION ========== -->
+<header class="nav-header">
+  <nav class="nav-container">
+    <a href="#about" class="nav-logo">Elton Freitas</a>
+    <div class="nav-right">
+      <div class="lang-switch">
+        <button class="lang-btn active" data-l="en">EN</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-l="pt">PT</button>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about"        data-i18n="nav-about">About</a></li>
+      <li><a href="#research"     data-i18n="nav-research">Research</a></li>
+      <li><a href="#publications" data-i18n="nav-publications">Publications</a></li>
+      <li><a href="#materials"    data-i18n="nav-materials">Materials</a></li>
+      <li><a href="#contact"      data-i18n="nav-contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ========== ABOUT / HERO ========== -->
+<section id="about" class="section-hero">
+  <div class="container">
+    <div class="hero-grid">
+
+      <div class="hero-photo-col">
+        <img src="../img/profile.jpg" alt="Elton Freitas" class="profile-photo">
+      </div>
+
+      <div class="hero-text-col">
+        <p class="hero-label" data-i18n="hero-label">Professor · Economist</p>
+        <h1 class="hero-name">Elton Freitas</h1>
+        <ul class="hero-positions">
+          <li data-i18n="pos-1">Associate Professor, Department of Economics, Universidade Federal de Sergipe (UFS)</li>
+          <li data-i18n="pos-2">Postdoctoral Researcher, Center for Collective Learning, IAST, Toulouse School of Economics</li>
+          <li data-i18n="pos-3">PhD and Visiting Researcher, CEDEPLAR/UFMG</li>
+        </ul>
+
+        <p class="hero-bio" data-i18n="hero-bio">
+          My research sits at the intersection of economic complexity, regional development,
+          international trade, and industrial economics, using tools from network science
+          and quantitative methods to understand how economies diversify, transform
+          structurally, and converge or diverge over time.
+        </p>
+
+        <div class="hero-metrics">
+          <div class="metric">
+            <span class="metric-val">463</span>
+            <span class="metric-lbl" data-i18n="lbl-citations">Citations</span>
+          </div>
+          <div class="metric">
+            <span class="metric-val">11</span>
+            <span class="metric-lbl">h-index</span>
+          </div>
+          <div class="metric">
+            <span class="metric-val">12</span>
+            <span class="metric-lbl">i10-index</span>
+          </div>
+          <span class="metric-source">via <a href="https://scholar.google.com/citations?user=5jq6W3AAAAAJ" target="_blank" rel="noopener">Google Scholar</a></span>
+        </div>
+
+        <div class="hero-links">
+          <a href="https://scholar.google.com/citations?user=5jq6W3AAAAAJ" target="_blank" rel="noopener" class="btn">Google Scholar</a>
+          <a href="http://lattes.cnpq.br/7115134234408070" target="_blank" rel="noopener" class="btn">Lattes</a>
+          <a href="https://orcid.org/0000-0001-8887-4471" target="_blank" rel="noopener" class="btn">ORCID</a>
+          <a href="https://www.linkedin.com/in/eltonfreitas7/" target="_blank" rel="noopener" class="btn">LinkedIn</a>
+          <a href="https://github.com/eltonfreitas" target="_blank" rel="noopener" class="btn">GitHub</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== RESEARCH ========== -->
+<section id="research" class="section-alt">
+  <div class="container">
+    <h2 class="section-title" data-i18n="research-title">Research</h2>
+    <p class="section-sub" data-i18n="research-sub">My work combines complexity science, regional economics, industrial economics, and network analysis to study how economies grow, diversify, and fall behind.</p>
+
+    <div class="cards-4">
+
+      <div class="card">
+        <div class="card-icon">&#x2B21;</div>
+        <h3 data-i18n="card-ec-title">Economic Complexity</h3>
+        <p data-i18n="card-ec-desc">Applying complexity science to understand how productive capabilities accumulate, how economies diversify, and the role of knowledge in structural transformation.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">&#x25CE;</div>
+        <h3 data-i18n="card-re-title">Regional Economics</h3>
+        <p data-i18n="card-re-desc">Investigating regional disparities in productivity, employment, and development paths, with a focus on Brazilian states and municipalities.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">&#x27C1;</div>
+        <h3 data-i18n="card-it-title">International Trade</h3>
+        <p data-i18n="card-it-desc">Examining trade network structures, core-periphery patterns, and the dynamics of export diversification and sophistication in developing economies.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">&#x223F;</div>
+        <h3 data-i18n="card-qm-title">Quantitative Methods</h3>
+        <p data-i18n="card-qm-desc">Combining network analysis, econometrics, and computational approaches to build rigorous empirical work in economics.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">&#x2699;</div>
+        <h3 data-i18n="card-ie-title">Industrial Economics</h3>
+        <p data-i18n="card-ie-desc">Studying market structure, firm behavior, and industrial organization, with a focus on how industries evolve and shape productive transformation in developing economies.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== PUBLICATIONS ========== -->
+<section id="publications" class="section-white">
+  <div class="container">
+    <h2 class="section-title" data-i18n="pub-title">Selected Publications</h2>
+    <p class="section-sub" data-i18n="pub-sub">Full list on <a href="https://scholar.google.com/citations?user=5jq6W3AAAAAJ" target="_blank" rel="noopener">Google Scholar</a> and <a href="http://lattes.cnpq.br/7115134234408070" target="_blank" rel="noopener">Lattes</a>.</p>
+
+    <div class="pub-list">
+
+      <div class="pub-item">
+        <div class="pub-year">2026</div>
+        <div class="pub-content">
+          <p class="pub-title">Economic complexity and local employment multipliers</p>
+          <p class="pub-meta" data-i18n="pub-meta-1">with A.R. Queiroz, J.P. Romero &middot; <em>Structural Change and Economic Dynamics</em>, v. 76, p. 20-43</p>
+          <div class="pub-tags">
+            <span class="tag" data-i18n="tag-complexity">Complexity</span>
+            <span class="tag" data-i18n="tag-employment">Employment</span>
+          </div>
+        </div>
+        <div class="pub-cites"><span>1</span><small data-i18n="lbl-citations">citations</small></div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-year">2025</div>
+        <div class="pub-content">
+          <p class="pub-title">Economic complexity and deforestation in the Brazilian Amazon</p>
+          <p class="pub-meta" data-i18n="pub-meta-2">with F. Silveira, J.P. Romero, A. Queiroz, A. Stein &middot; <em>World Development</em>, v. 185, p. 106804</p>
+          <div class="pub-tags">
+            <span class="tag" data-i18n="tag-complexity">Complexity</span>
+            <span class="tag" data-i18n="tag-environment">Environment</span>
+          </div>
+        </div>
+        <div class="pub-cites"><span>12</span><small data-i18n="lbl-citations">citations</small></div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-year">2024</div>
+        <div class="pub-content">
+          <p class="pub-title">Relatedness and regional economic complexity: good news for some, bad news for others</p>
+          <p class="pub-meta" data-i18n="pub-meta-3">with A.R. Queiroz, J.P. Romero &middot; <em>Revista Economia da ANPEC</em>, v. 25</p>
+          <div class="pub-tags">
+            <span class="tag" data-i18n="tag-regional">Regional Economics</span>
+            <span class="tag" data-i18n="tag-complexity">Complexity</span>
+          </div>
+        </div>
+        <div class="pub-cites"><span>9</span><small data-i18n="lbl-citations">citations</small></div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-year">2024</div>
+        <div class="pub-content">
+          <p class="pub-title">Related industries, economic complexity, and regional diversification: an application for Brazilian microregions</p>
+          <p class="pub-meta" data-i18n="pub-meta-4">with G. Britto, P. Amaral &middot; <em>Papers in Regional Science</em>, v. 103, p. 100011</p>
+          <div class="pub-tags">
+            <span class="tag" data-i18n="tag-regional">Regional Economics</span>
+            <span class="tag" data-i18n="tag-complexity">Complexity</span>
+          </div>
+        </div>
+        <div class="pub-cites"><span>31</span><small data-i18n="lbl-citations">citations</small></div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-year">2024</div>
+        <div class="pub-content">
+          <p class="pub-title">Complexity-based diversification strategies: a new method for ranking promising activities for regional diversification</p>
+          <p class="pub-meta" data-i18n="pub-meta-5">with J.P. Romero, F. Silveira, G. Britto, F. Cimini, F.G. Jayme Jr. &middot; <em>Spatial Economic Analysis</em>, v. 1, p. 1-24</p>
+          <div class="pub-tags">
+            <span class="tag" data-i18n="tag-complexity">Complexity</span>
+            <span class="tag" data-i18n="tag-regional">Regional Economics</span>
+          </div>
+        </div>
+        <div class="pub-cites"><span>4</span><small data-i18n="lbl-citations">citations</small></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== MATERIALS ========== -->
+<section id="materials" class="section-alt">
+  <div class="container">
+    <h2 class="section-title" data-i18n="mat-title">Teaching &amp; Materials</h2>
+    <p class="section-sub" data-i18n="mat-sub">Class notes, datasets, and code for students and researchers.</p>
+
+    <div class="cards-3">
+
+      <div class="mat-card">
+        <div class="mat-icon">&#x1F4D3;</div>
+        <h3 data-i18n="mat-notes-title">Class Notes</h3>
+        <p data-i18n="mat-notes-desc">Lecture notes and slides from undergraduate and graduate courses in economics, regional development, and quantitative methods.</p>
+        <a href="#" class="btn-ghost" data-i18n="mat-notes-btn">Coming soon</a>
+      </div>
+
+      <div class="mat-card">
+        <div class="mat-icon">&#x1F5C4;&#xFE0F;</div>
+        <h3 data-i18n="mat-data-title">Datasets</h3>
+        <p data-i18n="mat-data-desc">Curated datasets on economic complexity, trade flows, and Brazilian regional economic indicators, ready for research and teaching.</p>
+        <a href="https://github.com/eltonfreitas" target="_blank" rel="noopener" class="btn-ghost">GitHub</a>
+      </div>
+
+      <div class="mat-card">
+        <div class="mat-icon">&#x1F4BB;</div>
+        <h3 data-i18n="mat-code-title">Code &amp; Notebooks</h3>
+        <p data-i18n="mat-code-desc">Python scripts and Jupyter notebooks for economic complexity calculations, network analysis, and spatial econometrics.</p>
+        <a href="https://github.com/eltonfreitas/econcomplex" target="_blank" rel="noopener" class="btn-ghost">econcomplex</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== CONTACT / FOOTER ========== -->
+<footer id="contact" class="section-dark">
+  <div class="container">
+    <div class="footer-grid">
+
+      <div>
+        <h2 data-i18n="contact-title">Contact</h2>
+        <p>
+          Departamento de Economia<br>
+          Universidade Federal de Sergipe<br>
+          Sergipe, Brasil
+        </p>
+        <p><a href="mailto:elton.freitas@academico.ufs.br">elton.freitas@academico.ufs.br</a></p>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://scholar.google.com/citations?user=5jq6W3AAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+        <a href="http://lattes.cnpq.br/7115134234408070" target="_blank" rel="noopener">Lattes CV</a>
+        <a href="https://orcid.org/0000-0001-8887-4471" target="_blank" rel="noopener">ORCID</a>
+        <a href="https://www.linkedin.com/in/eltonfreitas7/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/eltonfreitas" target="_blank" rel="noopener">GitHub</a>
+      </div>
+
+    </div>
+  </div>
+  <div class="footer-bar">
+    <p>&copy; 2026 Elton Freitas</p>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>
