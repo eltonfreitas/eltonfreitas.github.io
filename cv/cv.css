@@ -1,0 +1,92 @@
+/* CV, printed to PDF (A4). Same palette as the site, set for paper:
+   ink #0b0e18, secondary #4a5168, one yellow accent used as a rule. */
+
+@page { size: A4; margin: 13mm 15mm 13mm; }
+
+:root {
+  --ink: #0b0e18;
+  --ink-2: #4a5168;
+  --rule: #d9dce6;
+  --yellow: #ffce3a;
+}
+
+* { box-sizing: border-box; }
+
+html { background: #fff; }
+body {
+  margin: 0 auto;
+  max-width: 180mm;
+  color: var(--ink);
+  font-family: "Inter", -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 9.2pt;
+  line-height: 1.4;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+@media screen { body { padding: 12mm 0; } }
+
+a { color: var(--ink); text-decoration: none; }
+
+header { margin-bottom: 4.5mm; }
+h1 {
+  font-weight: 900;
+  font-size: 24pt;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  margin: 0 0 2.5mm;
+}
+.roles { margin: 0 0 1.5mm; font-weight: 600; font-size: 10pt; }
+.contact { margin: 0; color: var(--ink-2); font-size: 8.8pt; }
+.contact span + span::before { content: "  ·  "; color: var(--ink-2); }
+
+h2 {
+  font-weight: 900;
+  font-size: 10.5pt;
+  letter-spacing: 0.01em;
+  margin: 4.2mm 0 2mm;
+  padding-bottom: 1.2mm;
+  border-bottom: 2.2pt solid var(--yellow);
+  break-after: avoid;
+}
+
+p { margin: 0 0 2mm; }
+.summary { font-size: 9.4pt; }
+
+.entries { list-style: none; margin: 0; padding: 0; }
+.entries > li {
+  display: grid;
+  grid-template-columns: 24mm minmax(0, 1fr);
+  column-gap: 4mm;
+  padding: 0.9mm 0;
+  break-inside: avoid;
+}
+.when {
+  color: var(--ink-2);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+.what { font-weight: 600; }
+.where { color: var(--ink-2); }
+.desc { display: block; color: var(--ink-2); margin-top: 0.6mm; }
+.desc b, .entries b { color: var(--ink); }
+
+.pubs .what { font-weight: 400; }
+.pubs .title { font-weight: 600; }
+.pubs .doi { color: var(--ink-2); font-size: 8.4pt; }
+
+h2 + .cols, .cols { break-inside: avoid; }
+.cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 8mm;
+}
+.plain { margin: 0; padding-left: 4mm; }
+.plain li { margin-bottom: 1mm; }
+
+footer {
+  margin-top: 6mm;
+  padding-top: 2mm;
+  border-top: 0.6pt solid var(--rule);
+  color: var(--ink-2);
+  font-size: 8pt;
+}

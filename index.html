@@ -1,12 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Elton Freitas | Economist</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Elton Freitas, economist</title>
+  <link rel="canonical" href="https://eltonfreitas.github.io/en/">
+  <link rel="alternate" hreflang="en" href="https://eltonfreitas.github.io/en/">
+  <link rel="alternate" hreflang="pt-BR" href="https://eltonfreitas.github.io/pt/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <script>
-    // Redirect to saved language preference, default English
-    window.location.replace((localStorage.getItem('lang') || 'en') + '/');
+    // Portuguese for visitors who chose it before or whose browser is in Portuguese; English otherwise.
+    var lang = "en";
+    try { lang = localStorage.getItem("lang") || ""; } catch (e) { lang = ""; }
+    if (lang !== "pt" && lang !== "en") {
+      lang = (navigator.language || "").toLowerCase().indexOf("pt") === 0 ? "pt" : "en";
+    }
+    location.replace(lang + "/" + location.hash);
   </script>
+  <noscript><meta http-equiv="refresh" content="0; url=en/"></noscript>
 </head>
-<body></body>
+<body>
+  <p><a href="en/">English</a> · <a href="pt/" lang="pt-BR">Português</a></p>
+</body>
 </html>
