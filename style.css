@@ -345,13 +345,6 @@ cite { font-style: italic; }
   gap: 3rem 3.5rem;
   margin-top: 3rem;
 }
-.axis .tag {
-  display: block;
-  font-weight: 900;
-  font-size: 0.875rem;
-  color: var(--yellow);
-  margin-bottom: 0.4rem;
-}
 .axis .question { margin-bottom: 0.25rem; }
 .axis dl { margin: 0; font-size: 0.9375rem; line-height: 1.55; }
 .axis dt {
@@ -515,6 +508,7 @@ cite { font-style: italic; }
   font-size: clamp(1.35rem, 3.4vw, 2.25rem);
   letter-spacing: -0.02em;
   color: var(--text);
+  text-decoration: none;
   margin: 0.25rem 0 2.5rem;
   overflow-wrap: anywhere;
 }
@@ -587,7 +581,6 @@ address { font-style: normal; }
     --yellow: #8a6a00;
   }
   .masthead, .skip, .note { display: none; }
-  .masthead { background: none; }
   .projects li { border: 1px solid var(--line); }
   .portrait img { -webkit-mask-image: none; mask-image: none; }
 }
