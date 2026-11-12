@@ -345,15 +345,36 @@ cite { font-style: italic; }
   gap: 3rem 3.5rem;
   margin-top: 3rem;
 }
-.axis .question { margin-bottom: 0.25rem; }
-.axis dl { margin: 0; font-size: 0.9375rem; line-height: 1.55; }
-.axis dt {
-  font-weight: 600;
-  color: var(--text-2);
-  font-size: 0.8125rem;
-  margin-top: 0.9rem;
+.axis {
+  border-top: 1px solid var(--line);
+  padding-top: 1.25rem;
 }
-.axis dd { margin: 0.15rem 0 0; }
+.axis .num {
+  display: block;
+  font-weight: 900;
+  font-size: 0.875rem;
+  letter-spacing: 0.08em;
+  color: var(--text-2);
+  margin-bottom: 0.6rem;
+  font-variant-numeric: tabular-nums;
+}
+.axis h3 { font-size: 1.5rem; margin-bottom: 0.85rem; }
+.axis p { margin: 0; color: var(--text-2); }
+.axis .methods {
+  margin-top: 1rem;
+  padding-top: 0.85rem;
+  border-top: 1px dashed var(--line);
+  color: var(--text);
+  font-size: 0.9375rem;
+  line-height: 1.55;
+}
+.axis .methods b {
+  display: block;
+  font-weight: 600;
+  font-size: 0.8125rem;
+  color: var(--text-2);
+  margin-bottom: 0.2rem;
+}
 
 /* Figure 1 */
 .figure {
